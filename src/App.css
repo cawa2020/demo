@@ -1,0 +1,79 @@
+:root {
+  --color: rgb(61, 73, 185);
+}
+
+header {
+  display: flex;
+  padding: 40px;
+  background-color: beige;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 40px;
+}
+
+.logo {
+  font-size: 26px;
+  color: var(--color)
+}
+
+button {
+  padding: 16px;
+  background-color: var(--color);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+input, textarea, select {
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  & .app {
+    width: 200px;
+    min-width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.status {
+  color: rgb(68, 31, 31)
+}
+
+@media screen and (max-with: 800px) {
+  header {
+    display: grid;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    gap: 20px;
+    display: grid;
+  }
+}
